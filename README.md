@@ -121,6 +121,5 @@ Citing OK_Computer
 If you use this code in your research, please cite:
 Copy@article{cette2024okcomputer,
   title={OK_Computer: A Deep Learning Framework for Materials Discovery},
-  author={Cette AI},
-  year={2024}
+  author={Cette AI}
 }
