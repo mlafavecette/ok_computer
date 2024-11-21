@@ -1,0 +1,112 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">Deep Learning Pipeline for Carbon-Negative Concrete Innovation</text>
+
+  <!-- Input Section -->
+  <g transform="translate(50, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#1565c0">Input Data</text>
+    <text x="100" y="60" text-anchor="middle" font-size="12">• Traditional Cement</text>
+    <text x="100" y="80" text-anchor="middle" font-size="12">• CO₂ Absorbing Materials</text>
+    <text x="100" y="100" text-anchor="middle" font-size="12">• Aluminosilicate Materials</text>
+    <text x="100" y="120" text-anchor="middle" font-size="12">• Performance Requirements</text>
+  </g>
+
+  <!-- VAE Section -->
+  <g transform="translate(300, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">VAE</text>
+    <text x="100" y="60" text-anchor="middle" font-size="12">• Composition Generation</text>
+    <text x="100" y="80" text-anchor="middle" font-size="12">• Material Space Exploration</text>
+    <text x="100" y="100" text-anchor="middle" font-size="12">• Latent Space Optimization</text>
+    <text x="100" y="120" text-anchor="middle" font-size="12">• Novel Material Discovery</text>
+  </g>
+
+  <!-- GCN Section -->
+  <g transform="translate(550, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#e65100">GCN</text>
+    <text x="100" y="60" text-anchor="middle" font-size="12">• Material Property Prediction</text>
+    <text x="100" y="80" text-anchor="middle" font-size="12">• Structural Analysis</text>
+    <text x="100" y="100" text-anchor="middle" font-size="12">• Component Interaction</text>
+    <text x="100" y="120" text-anchor="middle" font-size="12">• Performance Modeling</text>
+  </g>
+
+  <!-- MPNN Section -->
+  <g transform="translate(800, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#e8eaf6" stroke="#283593" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#283593">MPNN</text>
+    <text x="100" y="60" text-anchor="middle" font-size="12">• Molecular Interaction</text>
+    <text x="100" y="80" text-anchor="middle" font-size="12">• Surface Chemistry</text>
+    <text x="100" y="100" text-anchor="middle" font-size="12">• Binding Prediction</text>
+    <text x="100" y="120" text-anchor="middle" font-size="12">• CO₂ Absorption Modeling</text>
+  </g>
+
+  <!-- MEGNet Section -->
+  <g transform="translate(1050, 100)">
+    <rect x="0" y="0" width="200" height="140" rx="10" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="100" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#c2185b">MEGNet</text>
+    <text x="100" y="60" text-anchor="middle" font-size="12">• Crystal Structure Analysis</text>
+    <text x="100" y="80" text-anchor="middle" font-size="12">• Mechanical Properties</text>
+    <text x="100" y="100" text-anchor="middle" font-size="12">• Material Stability</text>
+    <text x="100" y="120" text-anchor="middle" font-size="12">• Strength Prediction</text>
+  </g>
+
+  <!-- Integration Layer -->
+  <g transform="translate(200, 300)">
+    <rect x="0" y="0" width="800" height="160" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+    <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="bold" fill="#2e7d32">Deep Learning Integration & Optimization</text>
+    
+    <!-- Columns -->
+    <g transform="translate(0, 50)">
+      <!-- VAE + GCN -->
+      <text x="200" y="20" text-anchor="middle" font-size="14" font-weight="bold">Material Discovery</text>
+      <text x="200" y="45" text-anchor="middle" font-size="12">• Novel Composition Generation</text>
+      <text x="200" y="65" text-anchor="middle" font-size="12">• Structure Optimization</text>
+      <text x="200" y="85" text-anchor="middle" font-size="12">• Property Prediction</text>
+      
+      <!-- MPNN -->
+      <text x="400" y="20" text-anchor="middle" font-size="14" font-weight="bold">Interaction Analysis</text>
+      <text x="400" y="45" text-anchor="middle" font-size="12">• CO₂ Absorption Pathways</text>
+      <text x="400" y="65" text-anchor="middle" font-size="12">• Surface Chemistry</text>
+      <text x="400" y="85" text-anchor="middle" font-size="12">• Binding Mechanisms</text>
+      
+      <!-- MEGNet -->
+      <text x="600" y="20" text-anchor="middle" font-size="14" font-weight="bold">Performance Validation</text>
+      <text x="600" y="45" text-anchor="middle" font-size="12">• Structural Integrity</text>
+      <text x="600" y="65" text-anchor="middle" font-size="12">• Strength Assessment</text>
+      <text x="600" y="85" text-anchor="middle" font-size="12">• Stability Analysis</text>
+    </g>
+  </g>
+
+  <!-- Optimization Results -->
+  <g transform="translate(200, 500)">
+    <rect x="0" y="0" width="800" height="200" rx="10" fill="#e1f5fe" stroke="#0277bd" stroke-width="2"/>
+    <text x="400" y="35" text-anchor="middle" font-size="18" font-weight="bold" fill="#0277bd">Optimized Carbon-Negative Concrete Components</text>
+    
+    <!-- Results Details -->
+    <text x="400" y="70" text-anchor="middle" font-size="14">Key Innovations:</text>
+    <text x="400" y="100" text-anchor="middle" font-size="14">• Optimized CO₂ Absorbing Materials (Magnesium Silicate, Olivine)</text>
+    <text x="400" y="125" text-anchor="middle" font-size="14">• Enhanced Biochar Integration (10% composition)</text>
+    <text x="400" y="150" text-anchor="middle" font-size="14">• Balanced Aluminosilicate Matrix (58% total)</text>
+    <text x="400" y="175" text-anchor="middle" font-size="14">Net Result: 435 tonnes CO₂ sequestered per 1000 tonnes (-326.5 tonnes net)</text>
+  </g>
+
+  <!-- Connecting Arrows -->
+  <path d="M 250 170 L 300 170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 500 170 L 550 170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 750 170 L 800 170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 1000 170 L 1050 170" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 600 240 L 600 300" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <path d="M 600 460 L 600 500" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow Marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+</svg>

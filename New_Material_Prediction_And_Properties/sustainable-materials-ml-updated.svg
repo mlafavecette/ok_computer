@@ -1,0 +1,111 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle grid -->
+  <rect width="1200" height="800" fill="#ffffff"/>
+  <path d="M 0 0 h 1200 v 800 h -1200 Z" fill="#f8f9fa" stroke="#e9ecef" stroke-width="1" stroke-dasharray="4,4"/>
+  
+  <!-- Title -->
+  <text x="600" y="50" text-anchor="middle" font-size="28" font-weight="bold" fill="#2c3e50">Neural Networks in Sustainable Materials Innovation</text>
+  <text x="600" y="80" text-anchor="middle" font-size="16" fill="#666">Advancing Environmental Impact, Economic Viability, and Performance</text>
+
+  <!-- Central Hub -->
+  <circle cx="600" cy="400" r="150" fill="#e3f2fd" stroke="#1565c0" stroke-width="2"/>
+  <text x="600" y="380" text-anchor="middle" font-size="20" font-weight="bold" fill="#1565c0">Sustainable</text>
+  <text x="600" y="405" text-anchor="middle" font-size="20" font-weight="bold" fill="#1565c0">Materials</text>
+  <text x="600" y="430" text-anchor="middle" font-size="20" font-weight="bold" fill="#1565c0">Engineering</text>
+
+  <!-- VAE Branch -->
+  <g transform="translate(200,200)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#fff3e0" stroke="#e65100" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#e65100">VAE</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Novel Materials</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Design Space</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Property Optimization</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Waste Conversion</text>
+  </g>
+
+  <!-- GCN Branch -->
+  <g transform="translate(900,200)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#2e7d32">GCN</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Structure Analysis</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Property Prediction</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Material Interactions</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Catalytic Processes</text>
+  </g>
+
+  <!-- MPNN Branch -->
+  <g transform="translate(200,500)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#7b1fa2">MPNN</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Molecular Dynamics</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Reaction Pathways</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Enzymatic Processes</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Energy Modeling</text>
+  </g>
+
+  <!-- MEGNet Branch -->
+  <g transform="translate(900,500)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#e8eaf6" stroke="#283593" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#283593">MEGNet</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Crystal Structures</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Mechanical Properties</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Stability Analysis</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Catalyst Design</text>
+  </g>
+
+  <!-- SchNet Branch -->
+  <g transform="translate(550,100)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#fce4ec" stroke="#c2185b" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#c2185b">SchNet</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Quantum Properties</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Energy States</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Atomic Interactions</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Reaction Kinetics</text>
+  </g>
+
+  <!-- CGCNN Branch -->
+  <g transform="translate(550,600)">
+    <rect x="0" y="0" width="180" height="140" rx="10" fill="#fff8e1" stroke="#ff8f00" stroke-width="2"/>
+    <text x="90" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#ff8f00">CGCNN</text>
+    <text x="90" y="55" text-anchor="middle" font-size="12">• Crystal Graphs</text>
+    <text x="90" y="75" text-anchor="middle" font-size="12">• Formation Energy</text>
+    <text x="90" y="95" text-anchor="middle" font-size="12">• Conversion Pathways</text>
+    <text x="90" y="115" text-anchor="middle" font-size="12">• Material Discovery</text>
+  </g>
+
+  <!-- Outcome Boxes -->
+  <!-- Environmental -->
+  <g transform="translate(50,350)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="#e1f5fe" stroke="#0277bd" stroke-width="1"/>
+    <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#0277bd">Environmental</text>
+    <text x="60" y="55" text-anchor="middle" font-size="11">• CO₂ Reduction</text>
+    <text x="60" y="75" text-anchor="middle" font-size="11">• Waste to Value</text>
+    <text x="60" y="95" text-anchor="middle" font-size="11">• Clean Energy</text>
+  </g>
+
+  <!-- Economic -->
+  <g transform="translate(1030,350)">
+    <rect x="0" y="0" width="120" height="100" rx="5" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="1"/>
+    <text x="60" y="30" text-anchor="middle" font-size="14" font-weight="bold" fill="#7b1fa2">Economic</text>
+    <text x="60" y="55" text-anchor="middle" font-size="11">• Cost Reduction</text>
+    <text x="60" y="75" text-anchor="middle" font-size="11">• Scalability</text>
+    <text x="60" y="95" text-anchor="middle" font-size="11">• Market Growth</text>
+  </g>
+
+  <!-- Connecting Lines -->
+  <path d="M 380 270 L 450 400" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 900 270 L 750 400" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 380 570 L 450 400" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 900 570 L 750 400" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 640 240 L 640 250" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+  <path d="M 640 600 L 640 550" stroke="#666" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- Innovation Outcomes -->
+  <g transform="translate(200,750)">
+    <text x="400" y="0" text-anchor="middle" font-size="16" font-weight="bold" fill="#2c3e50">Key Innovations:</text>
+    <text x="400" y="25" text-anchor="middle" font-size="14" fill="#666">• Carbon-Negative Materials (>30% reduction)</text>
+    <text x="400" y="45" text-anchor="middle" font-size="14" fill="#666">• Renewable Resource Integration</text>
+    <text x="400" y="65" text-anchor="middle" font-size="14" fill="#666">• Enhanced Performance-to-Cost Ratio</text>
+    <text x="400" y="85" text-anchor="middle" font-size="14" fill="#666">• Biofuel from Waste Conversion</text>
+  </g>
+</svg>
