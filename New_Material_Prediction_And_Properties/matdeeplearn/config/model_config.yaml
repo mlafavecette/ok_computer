@@ -1,0 +1,111 @@
+# Model Configuration for New_Material_Prediction_And_Properties
+# Contains architecture-specific parameters for each model type
+
+# SchNet Configuration
+SchNet:
+  n_atom_basis: 128
+  n_filters: 256
+  n_interactions: 6
+  cutoff: 5.0
+  n_gaussians: 50
+  max_z: 100
+  standardize: True
+  atomref: null
+  mean: null
+  std: null
+
+# MPNN Configuration
+MPNN:
+  message_size: 128
+  message_passes: 3
+  readout_dim: 512
+  atom_features: 64
+  edge_features: 32
+  message_nn_depth: 2
+  readout_nn_depth: 3
+  dropout_rate: 0.1
+
+# MEGNet Configuration
+MEGNet:
+  n_blocks: 3
+  n_conv: 5
+  embedding_dim: 32
+  n_bins: 100
+  cutoff: 6.0
+  db_step: 0.1
+  gaussian_centers: 2.0
+  gaussian_width: 0.5
+
+# CGCNN Configuration
+CGCNN:
+  atom_embedding_size: 64
+  conv_layers: 3
+  hidden_size: 128
+  n_conv: 4
+  pool: 'global_mean_pool'
+  dropout_rate: 0.2
+
+# GAT-GNN Configuration
+GAT_GNN:
+  n_heads: 4
+  hidden_channels: 256
+  out_channels: 128
+  n_layers: 3
+  dropout: 0.1
+  edge_dim: 32
+  add_self_loops: True
+
+# Deep-GATGNN Configuration
+DeepGATGNN:
+  n_layers: 5
+  hidden_channels: 256
+  heads: 8
+  concat: True
+  negative_slope: 0.2
+  dropout: 0.15
+  add_self_loops: True
+
+# GCN Configuration
+GCN:
+  hidden_channels: [256, 256, 128]
+  dropout: 0.1
+  batch_norm: True
+  residual: True
+
+# SuperSchNet Configuration
+SuperSchNet:
+  n_atom_basis: 256
+  n_filters: 512
+  n_interactions: 8
+  cutoff: 6.0
+  n_gaussians: 64
+  max_z: 100
+  standardize: True
+
+# DescriptorNN Configuration
+DescriptorNN:
+  descriptor_dim: 1024
+  hidden_layers: [512, 256, 128]
+  activation: 'relu'
+  dropout_rate: 0.2
+  batch_norm: True
+
+# Quantum-GAN Configuration
+QuantumGAN:
+  latent_dim: 100
+  n_qubits: 4
+  n_qlayers: 2
+  n_classical_layers: 3
+  classical_hidden_dim: 256
+  discriminator_layers: [512, 256, 128]
+  generator_learning_rate: 0.0002
+  discriminator_learning_rate: 0.0002
+
+# Shared default parameters
+default:
+  batch_size: 32
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  optimizer: 'adam'
+  activation: 'relu'
+  initialization: 'he_normal'

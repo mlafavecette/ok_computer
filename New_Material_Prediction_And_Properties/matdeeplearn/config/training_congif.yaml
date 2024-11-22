@@ -1,0 +1,161 @@
+# Training Configuration for New_Material_Prediction_And_Properties
+# Contains training parameters and settings for different models
+
+# Default training parameters
+default:
+  training:
+    epochs: 200
+    batch_size: 32
+    validation_split: 0.2
+    shuffle: True
+    early_stopping:
+      monitor: 'val_loss'
+      patience: 20
+      min_delta: 0.001
+    model_checkpoint:
+      monitor: 'val_loss'
+      save_best_only: True
+      save_weights_only: False
+    learning_rate_scheduler:
+      type: 'ReduceLROnPlateau'
+      patience: 10
+      factor: 0.5
+      min_lr: 0.00001
+
+  optimization:
+    optimizer: 'adam'
+    learning_rate: 0.001
+    weight_decay: 0.0001
+    momentum: 0.9
+    beta1: 0.9
+    beta2: 0.999
+    epsilon: 1e-8
+
+  regularization:
+    dropout_rate: 0.1
+    l1_reg: 0.0
+    l2_reg: 0.0001
+    batch_normalization: True
+    gradient_clipping:
+      max_norm: 1.0
+      clip_value: null
+
+  data:
+    preprocessing:
+      standardization: True
+      normalization: True
+      feature_scaling: 'standard'
+    augmentation:
+      enabled: False
+      rotation: True
+      translation: True
+      noise: 0.01
+    batch_generation:
+      num_workers: 4
+      prefetch_factor: 2
+      pin_memory: True
+
+  logging:
+    tensorboard: True
+    log_frequency: 100
+    profile_batch: '2,8'
+    write_graph: True
+    update_freq: 'epoch'
+
+# Model-specific training configurations
+SchNet:
+  training:
+    batch_size: 16
+    epochs: 300
+  optimization:
+    learning_rate: 0.0005
+    scheduler:
+      type: 'CosineAnnealingLR'
+      T_max: 300
+      eta_min: 0.00001
+
+MPNN:
+  training:
+    batch_size: 32
+    epochs: 250
+  optimization:
+    learning_rate: 0.001
+    scheduler:
+      type: 'StepLR'
+      step_size: 30
+      gamma: 0.7
+
+MEGNet:
+  training:
+    batch_size: 64
+    epochs: 200
+  data:
+    preprocessing:
+      graph_construction:
+        cutoff: 5.0
+        n_neighbors: 12
+
+CGCNN:
+  training:
+    batch_size: 32
+    epochs: 300
+  optimization:
+    optimizer: 'adamw'
+    learning_rate: 0.0003
+
+GAT_GNN:
+  training:
+    batch_size: 16
+    epochs: 250
+  optimization:
+    learning_rate: 0.001
+    weight_decay: 0.0005
+
+Quantum_GAN:
+  training:
+    batch_size: 8
+    epochs: 500
+    discriminator_steps: 2
+    generator_steps: 1
+  optimization:
+    generator_lr: 0.0002
+    discriminator_lr: 0.0002
+    beta1: 0.5
+
+# Validation settings
+validation:
+  metrics:
+    - mean_absolute_error
+    - mean_squared_error
+    - r2_score
+    - rmse
+    - pearson_correlation
+  cross_validation:
+    n_splits: 5
+    shuffle: True
+    random_state: 42
+
+# Testing settings
+testing:
+  batch_size: 32
+  metrics:
+    - mean_absolute_error
+    - mean_squared_error
+    - r2_score
+    - rmse
+  save_predictions: True
+  visualization:
+    enabled: True
+    plots:
+      - prediction_vs_target
+      - error_distribution
+      - learning_curves
+
+# Hardware configuration
+hardware:
+  gpu_memory_fraction: 0.9
+  mixed_precision: True
+  xla_acceleration: True
+  tensor_cores: True
+  multi_gpu: False
+  distributed_strategy: 'mirrored'
