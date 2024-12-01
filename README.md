@@ -1,4 +1,4 @@
-You're right. Here's a properly formatted README.md that will display correctly on GitHub and PyCharm:
+
 
 ```markdown
 # OK_Computer Neural Network Framework

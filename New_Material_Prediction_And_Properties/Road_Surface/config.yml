@@ -1,0 +1,58 @@
+data_path: "data/municipal_approval"
+batch_size: 32
+epochs: 100
+learning_rate: 0.001
+experiment_name: "road_materials"
+
+model:
+  cgcnn:
+    hidden_dim: 128
+    num_conv_layers: 4
+    num_hidden_layers: 2
+    dropout_rate: 0.1
+    edge_features: 64
+    batch_norm: true
+    pool_method: "mean"
+
+  megnet:
+    hidden_dim: 128
+    num_blocks: 3
+    num_dense_layers: 2
+    activation: "softplus"
+    dropout_rate: 0.1
+    global_features: 32
+    edge_features: 64
+
+  schnet:
+    hidden_dim: 128
+    num_filters: 64
+    num_interactions: 3
+    cutoff: 8.0
+    num_dense_layers: 2
+    dropout_rate: 0.1
+    use_batch_norm: true
+
+  super_cgcnn:
+    hidden_dim: 256
+    num_conv_layers: 5
+    num_dense_layers: 3
+    dropout_rate: 0.15
+    edge_features: 128
+    use_group_norm: true
+
+  super_schnet:
+    hidden_dim: 256
+    num_filters: 128
+    num_blocks: 4
+    cutoff: 10.0
+    num_dense_layers: 3
+    dropout_rate: 0.15
+
+data:
+  grid_size: 32
+  max_neighbors: 12
+  min_samples: 100000
+  train_split: 0.7
+  val_split: 0.15
+  scale_features: true
+  augmentation: true
